@@ -1,25 +1,25 @@
 <html>
     <head>
-        <style type="text/css" href="css/index.css"></style>
-        <script type="text/javascript" crossorigin="anonymous" src="js/index.js"></script>
+        <link rel="stylesheet" href="css/index.css"></style>
+        <script type="application/javascript" src="js/index.js"></script>
     </head>
     <body>
         <h1> A (very basic) Calculator App </h1>
-        <h2> Enter first number: </h2> <input type="number"> <br>
-        <h2> Enter second number: </h2> <input type="number"> <br>
-        <h2> Choose operation: </h2> 
+        <h2> Enter first number: <input type="number" id="first"></h2> <br>
+        <h2> Enter second number: <input type="number" id="second"></h2> <br>
+        <h2> Choose operation: 
         <select name="operations" id="operations">
             <option value="+">+</option>
-            <option value="+">-</option>
-            <option value="+">/</option>
-            <option value="+">x</option>
-            <option value="+">^</option>
-            <option value="+">%</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="x">x</option>
+            <option value="^">^</option>
+            <option value="%">%</option>
         </select>
+        </h2> 
         <br>
         <button type="submit">Submit</button>
-        <br>
-        <br>
-        <h2>Result of computation: </h2> <input type="number">
+        <br><br>
+        <h2>Result of computation: <input type="number" id="result"></h2>
     </body>
 </html>
