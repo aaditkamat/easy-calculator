@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/index.css"></style>
+        <script src="js/index.js"></script>
     </head>
     <body>
         <h1> A (very basic) Calculator App </h1>
@@ -20,39 +21,6 @@
         <button type="submit">Submit</button>
         <br><br>
         <h2>Result of computation: <input type="number" id="result"></h2>
-        <script>
-            function calculate(first, second, operation) {
-                if (operation === '+') {
-                    return first + second;
-                }
-                else if (operation === '-') {
-                    return first - second;
-                }
-                else if (operation === '/') {
-                    return first / second;
-                }
-                else if (operation === 'x') {
-                    return first * second;
-                }
-                else if (operation === '^') {
-                    return first ^ second;
-                }
-                else {
-                    return first % second;
-                }
-            }
-
-            const button = document.querySelector('button');
-            button.addEventListener('click', function() {
-                const first = parseInt(document.getElementById('first').value);
-                const second = parseInt(document.getElementById('second').value);
-                const selectedIndex = document.getElementById('operations').selectedIndex;
-                const children = document.getElementById('operations').children;
-                const selectedElement = children[selectedIndex];
-                const operation = selectedElement.value;
-                const result = calculate(first, second, operation);
-                document.getElementById('result').value = result;
-            });
         </script>
     </body>
 </html>

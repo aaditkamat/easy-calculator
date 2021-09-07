@@ -1,5 +1,3 @@
-console.log(document);
-
 function calculate(first, second, operation) {
     if (operation === '+') {
         return first + second;
@@ -23,8 +21,8 @@ function calculate(first, second, operation) {
 
 function onclick() {
     console.log('Button clicked');
-    const first = parseInt(document.getElementById('first'));
-    const second = parseInt(document.getElementById('second'));
+    const first = parseInt(document.getElementById('first').value);
+    const second = parseInt(document.getElementById('second').value);
     const selectedIndex = document.getElementById('operations').selectedIndex;
     const children = document.getElementById('operations').children;
     const selectedElement = children[selectedIndex];
